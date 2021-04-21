@@ -1,7 +1,8 @@
 import React, { Suspense } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import LandingPage from "./views/LandingPage";
-import useInput from "./views/useInput";
+import useTab from "./views/useTab";
+import useEffect from "./views/UseEffect";
 function App() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
@@ -9,7 +10,8 @@ function App() {
         <BrowserRouter>
           <Switch>
             <Route exact path="/" component={LandingPage} />
-            <Route exact path="/useInput" component={useInput} />
+            <Route exact path="/useTab" component={useTab} />
+            <Route exact path="/useeffect" component={useEffect} />
           </Switch>
         </BrowserRouter>
       </div>

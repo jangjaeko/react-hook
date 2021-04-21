@@ -20,7 +20,7 @@ const useTabs = (initialTab, allTabs) => {
   };
 };
 
-const Practice = () => {
+const useTab = () => {
   const { currentItem, changeitem } = useTabs(0, content);
   return (
     <div style={{ textAlign: "center" }}>
@@ -32,4 +32,4 @@ const Practice = () => {
   );
 };
 
-export default Practice;
+export default useTab;
