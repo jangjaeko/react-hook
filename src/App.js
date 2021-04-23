@@ -4,6 +4,7 @@ import LandingPage from "./views/LandingPage";
 import useTab from "./views/useTab";
 import useEffect from "./views/UseEffect";
 import useTitleex from "./views/useTitleex";
+import useClickex from "./views/useClickex";
 function App() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
@@ -14,6 +15,7 @@ function App() {
             <Route exact path="/useTab" component={useTab} />
             <Route exact path="/useeffect" component={useEffect} />
             <Route exact path="/usetitle" component={useTitleex} />
+            <Route exact path="/useclick" component={useClickex} />
           </Switch>
         </BrowserRouter>
       </div>
