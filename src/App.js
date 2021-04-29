@@ -6,6 +6,7 @@ import useEffect from "./views/UseEffect";
 import useTitleex from "./views/useTitleex";
 import useClickex from "./views/useClickex";
 import useCon from "./views/usecon";
+import PreventLeave from "./views/PreventLeave";
 function App() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
@@ -18,6 +19,7 @@ function App() {
             <Route exact path="/usetitle" component={useTitleex} />
             <Route exact path="/useclick" component={useClickex} />
             <Route exact path="/useconfirm" component={useCon} />
+            <Route exact path="/preventleave" component={PreventLeave} />
           </Switch>
         </BrowserRouter>
       </div>
