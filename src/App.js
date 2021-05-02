@@ -8,6 +8,8 @@ import useClickex from "./views/useClickex";
 import useCon from "./views/usecon";
 import PreventLeave from "./views/PreventLeave";
 import BeforeLeave from "./views/BeforeLeave";
+import FadeIn from "./views/FadeIn";
+import Network from "./views/Network";
 function App() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
@@ -22,6 +24,8 @@ function App() {
             <Route exact path="/useconfirm" component={useCon} />
             <Route exact path="/preventleave" component={PreventLeave} />
             <Route exact path="/beforeleave" component={BeforeLeave} />
+            <Route exact path="/fadein" component={FadeIn} />
+            <Route exact path="/network" component={Network} />
           </Switch>
         </BrowserRouter>
       </div>
