@@ -10,6 +10,8 @@ import PreventLeave from "./views/PreventLeave";
 import BeforeLeave from "./views/BeforeLeave";
 import FadeIn from "./views/FadeIn";
 import Network from "./views/Network";
+import Scrollex from "./views/Scrollex";
+import imageFull from "./views/imageFull";
 function App() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
@@ -26,6 +28,8 @@ function App() {
             <Route exact path="/beforeleave" component={BeforeLeave} />
             <Route exact path="/fadein" component={FadeIn} />
             <Route exact path="/network" component={Network} />
+            <Route exact path="/scroll" component={Scrollex} />
+            <Route exact path="/imagefull" component={imageFull} />
           </Switch>
         </BrowserRouter>
       </div>
