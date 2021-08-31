@@ -14,6 +14,7 @@ const content = [
 
 const useTabs = (initialTab, allTabs) => {
   const [currentIndex, setCurrentIndex] = useState(initialTab);
+
   return {
     currentItem: allTabs[currentIndex],
     changeitem: setCurrentIndex,
@@ -22,6 +23,7 @@ const useTabs = (initialTab, allTabs) => {
 
 const useTab = () => {
   const { currentItem, changeitem } = useTabs(0, content);
+
   return (
     <div style={{ textAlign: "center" }}>
       {content.map((section, index) => (
