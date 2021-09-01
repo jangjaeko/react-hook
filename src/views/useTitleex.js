@@ -12,7 +12,7 @@ const useTitle = (initialTilte) => {
 function useTitleex() {
   const titleUpdater = useTitle("Loading...");
   setTimeout(() => titleUpdater("HOME"), 5000);
-  return <div>hell</div>;
+  return <div>hell in a cell</div>;
 }
 
 export default useTitleex;
